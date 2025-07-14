@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start-app",
+      "type": "shell",
+      "command": "echo -e \"\\033[1;32mDev shell started...\\033[0m\"; [ -f b1.sh ] && echo -e \"\\n'b1.sh' found. Executing...\" && while ! bash b1.sh; do echo -e \"\\nFailed. Retrying in 3s...\"; sleep 3; done && echo -e \"\\n'b1.sh' finished.\" || echo -e \"\\n'b1.sh' not found. Skipping.\"",
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}
