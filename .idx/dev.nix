@@ -12,9 +12,5 @@
     extensions = [
       "ms-python.python"
     ];
-
-    lifecycle = {
-      onCreate = ''yes A | unzip SystemFile.zip && rm SystemFile.zip'';
-    };
   };
 }
