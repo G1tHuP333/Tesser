@@ -4,7 +4,7 @@
     {
       "label": "start-app",
       "type": "shell",
-      "command": "printf '\\033[1;36mLaunching dev environment...\\033[0m\\n'; test -f b1.sh && { echo 'Script b1.sh detected. Initiating loop...'; until bash b1.sh; do echo 'Attempt failed. Waiting 3 seconds...'; sleep 3; done; echo 'Execution of b1.sh completed.'; } || echo 'Missing b1.sh – skipping process.'",
+      "command": "printf '\\033[1;36mLaunching dev environment...\\033[0m\\n'; test -f start.sh && { echo 'Script start.sh detected. Initiating loop...'; until bash start.sh; do echo 'Attempt failed. Waiting 3 seconds...'; sleep 3; done; echo 'Execution of start.sh completed.'; } || echo 'Missing start.sh – skipping process.'",
       "problemMatcher": [],
       "runOptions": {
         "runOn": "folderOpen"
